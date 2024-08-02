@@ -14,7 +14,7 @@ st.set_page_config(layout="wide")
 
 st.title('First Watch Report')
 
-df = pd.read_excel('output.xlsx')
+df = pd.read_excel('./output.xlsx')
 
 blankIndex = df[df.isnull().all(1)].index[0]
 
